@@ -1,0 +1,8 @@
+{
+    "apikey": "KTVarqGPOQ1_ExQZ9RnWqEoS4T31KhnDdOELq8u51WJ4",
+    "iam_apikey_description": "Auto-generated for key f185463b-8d0b-45b4-9f52-ed4dd3b26ee5",
+    "iam_apikey_name": "Auto-generated service credentials",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/3ef7e6eea5ad4475fdeb2ec4404cfe72::serviceid:ServiceId-2f369bc0-e4e5-4489-b8a3-ffde6e66e1ca",
+    "url": "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize"
+  }
