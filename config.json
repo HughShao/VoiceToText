@@ -1,5 +1,5 @@
 {
-    "apikey": "KTVarqGPOQ1_ExQZ9RnWqEoS4T31KhnDdOELq8u51WJ4",
+    "Authorization":"YXBpa2V5OktUVmFycUdQT1ExX0V4UVo5Um5XcUVvUzRUMzFLaG5EZE9FTHE4dTUxV0o0",
     "iam_apikey_description": "Auto-generated for key f185463b-8d0b-45b4-9f52-ed4dd3b26ee5",
     "iam_apikey_name": "Auto-generated service credentials",
     "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",

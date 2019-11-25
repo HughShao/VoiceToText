@@ -1,7 +1,6 @@
 var request = require('request');
 const config = require('../config');
 var fs = require('fs');
-var AuthorizationStr = new Buffer('apikey:'+config.apikey).toString('base64');
 function viewToTextApi(formData, callback) {
     //formData :{
     //     "contentType":"audio/mp3",
@@ -11,7 +10,7 @@ function viewToTextApi(formData, callback) {
     
     console.log("ViewToText API==>");
     const headers = {
-        Authorization: 'Basic '+ AuthorizationStr,
+        Authorization: 'Basic '+ config.Authorization,
         'Content-Type': formData.contentType,
         Accept: 'application/json'
     }
