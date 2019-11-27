@@ -4,5 +4,7 @@
     "iam_apikey_name": "Auto-generated service credentials",
     "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
     "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/3ef7e6eea5ad4475fdeb2ec4404cfe72::serviceid:ServiceId-2f369bc0-e4e5-4489-b8a3-ffde6e66e1ca",
-    "url": "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize"
+    "url": "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize",
+    "file_path":"../file",
+    "temp_path":"../temp"
   }
