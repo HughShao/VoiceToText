@@ -1,8 +1,9 @@
 const formidable = require('formidable');
-const config = require('../config');
 const path = require('path');
 const fs = require('fs');
-var sd = require("silly-datetime");
+const sd = require("silly-datetime");
+
+const config = require('../config');
 exports.doUpload = (req, res, next) => {
     const form = new formidable.IncomingForm();
     form.uploadDir = path.join(__dirname,config.temp_path);
@@ -38,8 +39,7 @@ exports.doUpload = (req, res, next) => {
                     console.info(err);
                     res.json({code:-1, message:'upload failed'});
                 } else {
-                    var fileUrl = '/file/' + fileName;
-                    res.json({code:0, fileUrl:fileUrl});
+                    res.json({code:0, fileName:fileName});
                 }
             });
         }

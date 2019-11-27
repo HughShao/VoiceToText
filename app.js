@@ -3,9 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var uploadRouter = require('./routes/upload');
+var recognizeRouter = require('./routes/recognize');
 var app = express();
 
 // view engine setup
@@ -17,9 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.json()); 
 
 app.use('/', indexRouter);
 app.use('/upload', uploadRouter);
+app.use('/recognize', recognizeRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

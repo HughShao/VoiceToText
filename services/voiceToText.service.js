@@ -1,7 +1,7 @@
-var request = require('request');
-var config = require('../config');
-var fs = require('fs');
-var AuthorizationStr = new Buffer('apikey:'+new Buffer(config.apikey,'base64').toString()).toString('base64');
+const request = require('request');
+const config = require('../config');
+const fs = require('fs');
+const AuthorizationStr = new Buffer('apikey:'+new Buffer(config.apikey,'base64').toString()).toString('base64');
 
 function voiceToText(formData, callback) {
     //formData :{
@@ -23,7 +23,7 @@ function voiceToText(formData, callback) {
         headers: headers,
         body: fs.createReadStream(formData.path)
     }, (err, body, response) => {
-        callback(err, body, response)
+        callback(err, body);
     })
 }
 
